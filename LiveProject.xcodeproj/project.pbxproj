@@ -31,6 +31,15 @@
 		63C2731B1D2E46D30062C805 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C2731A1D2E46D30062C805 /* libz.tbd */; };
 		63C273231D2E58780062C805 /* NetAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C273201D2E58780062C805 /* NetAccessor.m */; };
 		63C273241D2E58780062C805 /* UIViewController+HUDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C273221D2E58780062C805 /* UIViewController+HUDUtils.m */; };
+		63C273401D2E5CC50062C805 /* UIDevice+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C273281D2E5CC50062C805 /* UIDevice+SLExtension.m */; };
+		63C273411D2E5CC50062C805 /* NSObject+ALinHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C2732B1D2E5CC50062C805 /* NSObject+ALinHUD.m */; };
+		63C273421D2E5CC50062C805 /* UIViewController+SLHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C2732D1D2E5CC50062C805 /* UIViewController+SLHUD.m */; };
+		63C273431D2E5CC50062C805 /* ALinRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C273301D2E5CC50062C805 /* ALinRefreshGifHeader.m */; };
+		63C273441D2E5CC50062C805 /* UIImage+ALinExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C273331D2E5CC50062C805 /* UIImage+ALinExtension.m */; };
+		63C273451D2E5CC50062C805 /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C273361D2E5CC50062C805 /* UIImageView+Extension.m */; };
+		63C273461D2E5CC50062C805 /* UIView+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C273391D2E5CC50062C805 /* UIView+SLExtension.m */; };
+		63C273471D2E5CC50062C805 /* UIViewController+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C2733C1D2E5CC50062C805 /* UIViewController+SLExtension.m */; };
+		63C273481D2E5CC50062C805 /* SLTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C2733F1D2E5CC50062C805 /* SLTopWindow.m */; };
 		92D8AE97AAF3B07497474C2B /* Pods_LiveProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4490761A6B381B6E655F3E /* Pods_LiveProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +98,24 @@
 		63C273201D2E58780062C805 /* NetAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAccessor.m; sourceTree = "<group>"; };
 		63C273211D2E58780062C805 /* UIViewController+HUDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUDUtils.h"; sourceTree = "<group>"; };
 		63C273221D2E58780062C805 /* UIViewController+HUDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUDUtils.m"; sourceTree = "<group>"; };
+		63C273271D2E5CC50062C805 /* UIDevice+SLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SLExtension.h"; sourceTree = "<group>"; };
+		63C273281D2E5CC50062C805 /* UIDevice+SLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SLExtension.m"; sourceTree = "<group>"; };
+		63C2732A1D2E5CC50062C805 /* NSObject+ALinHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ALinHUD.h"; sourceTree = "<group>"; };
+		63C2732B1D2E5CC50062C805 /* NSObject+ALinHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ALinHUD.m"; sourceTree = "<group>"; };
+		63C2732C1D2E5CC50062C805 /* UIViewController+SLHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SLHUD.h"; sourceTree = "<group>"; };
+		63C2732D1D2E5CC50062C805 /* UIViewController+SLHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SLHUD.m"; sourceTree = "<group>"; };
+		63C2732F1D2E5CC50062C805 /* ALinRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinRefreshGifHeader.h; sourceTree = "<group>"; };
+		63C273301D2E5CC50062C805 /* ALinRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinRefreshGifHeader.m; sourceTree = "<group>"; };
+		63C273321D2E5CC50062C805 /* UIImage+ALinExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ALinExtension.h"; sourceTree = "<group>"; };
+		63C273331D2E5CC50062C805 /* UIImage+ALinExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ALinExtension.m"; sourceTree = "<group>"; };
+		63C273351D2E5CC50062C805 /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
+		63C273361D2E5CC50062C805 /* UIImageView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
+		63C273381D2E5CC50062C805 /* UIView+SLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLExtension.h"; sourceTree = "<group>"; };
+		63C273391D2E5CC50062C805 /* UIView+SLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLExtension.m"; sourceTree = "<group>"; };
+		63C2733B1D2E5CC50062C805 /* UIViewController+SLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SLExtension.h"; sourceTree = "<group>"; };
+		63C2733C1D2E5CC50062C805 /* UIViewController+SLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SLExtension.m"; sourceTree = "<group>"; };
+		63C2733E1D2E5CC50062C805 /* SLTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTopWindow.h; sourceTree = "<group>"; };
+		63C2733F1D2E5CC50062C805 /* SLTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTopWindow.m; sourceTree = "<group>"; };
 		7B4490761A6B381B6E655F3E /* Pods_LiveProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AD450957296637E68373E03 /* Pods_LiveProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922EC081B7BFED29587E20E6 /* Pods_LiveProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +262,7 @@
 		63C2731D1D2E58780062C805 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				63C273251D2E5CC50062C805 /* Toos */,
 				63C2731E1D2E58780062C805 /* Network */,
 			);
 			path = Classes;
@@ -249,6 +277,95 @@
 				63C273221D2E58780062C805 /* UIViewController+HUDUtils.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		63C273251D2E5CC50062C805 /* Toos */ = {
+			isa = PBXGroup;
+			children = (
+				63C273261D2E5CC50062C805 /* Device */,
+				63C273291D2E5CC50062C805 /* HUD */,
+				63C2732E1D2E5CC50062C805 /* Refresh */,
+				63C273311D2E5CC50062C805 /* UIImage */,
+				63C273341D2E5CC50062C805 /* UIImageView */,
+				63C273371D2E5CC50062C805 /* View */,
+				63C2733A1D2E5CC50062C805 /* ViewController */,
+				63C2733D1D2E5CC50062C805 /* Window */,
+			);
+			path = Toos;
+			sourceTree = "<group>";
+		};
+		63C273261D2E5CC50062C805 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				63C273271D2E5CC50062C805 /* UIDevice+SLExtension.h */,
+				63C273281D2E5CC50062C805 /* UIDevice+SLExtension.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		63C273291D2E5CC50062C805 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				63C2732A1D2E5CC50062C805 /* NSObject+ALinHUD.h */,
+				63C2732B1D2E5CC50062C805 /* NSObject+ALinHUD.m */,
+				63C2732C1D2E5CC50062C805 /* UIViewController+SLHUD.h */,
+				63C2732D1D2E5CC50062C805 /* UIViewController+SLHUD.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		63C2732E1D2E5CC50062C805 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				63C2732F1D2E5CC50062C805 /* ALinRefreshGifHeader.h */,
+				63C273301D2E5CC50062C805 /* ALinRefreshGifHeader.m */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		63C273311D2E5CC50062C805 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				63C273321D2E5CC50062C805 /* UIImage+ALinExtension.h */,
+				63C273331D2E5CC50062C805 /* UIImage+ALinExtension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		63C273341D2E5CC50062C805 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				63C273351D2E5CC50062C805 /* UIImageView+Extension.h */,
+				63C273361D2E5CC50062C805 /* UIImageView+Extension.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		63C273371D2E5CC50062C805 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63C273381D2E5CC50062C805 /* UIView+SLExtension.h */,
+				63C273391D2E5CC50062C805 /* UIView+SLExtension.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63C2733A1D2E5CC50062C805 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63C2733B1D2E5CC50062C805 /* UIViewController+SLExtension.h */,
+				63C2733C1D2E5CC50062C805 /* UIViewController+SLExtension.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		63C2733D1D2E5CC50062C805 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				63C2733E1D2E5CC50062C805 /* SLTopWindow.h */,
+				63C2733F1D2E5CC50062C805 /* SLTopWindow.m */,
+			);
+			path = Window;
 			sourceTree = "<group>";
 		};
 		FAC6EFE06D7738D406DA66C8 /* Pods */ = {
@@ -525,11 +642,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C273411D2E5CC50062C805 /* NSObject+ALinHUD.m in Sources */,
+				63C273401D2E5CC50062C805 /* UIDevice+SLExtension.m in Sources */,
 				63C272D81D2E45F00062C805 /* ViewController.m in Sources */,
+				63C273461D2E5CC50062C805 /* UIView+SLExtension.m in Sources */,
+				63C273421D2E5CC50062C805 /* UIViewController+SLHUD.m in Sources */,
+				63C273471D2E5CC50062C805 /* UIViewController+SLExtension.m in Sources */,
+				63C273481D2E5CC50062C805 /* SLTopWindow.m in Sources */,
 				63C272D51D2E45F00062C805 /* AppDelegate.m in Sources */,
 				63C273231D2E58780062C805 /* NetAccessor.m in Sources */,
 				63C272D21D2E45F00062C805 /* main.m in Sources */,
+				63C273451D2E5CC50062C805 /* UIImageView+Extension.m in Sources */,
+				63C273431D2E5CC50062C805 /* ALinRefreshGifHeader.m in Sources */,
 				63C273241D2E58780062C805 /* UIViewController+HUDUtils.m in Sources */,
+				63C273441D2E5CC50062C805 /* UIImage+ALinExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

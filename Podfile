@@ -14,6 +14,8 @@ target 'LiveProject' do
     pod 'BarrageRenderer'
     pod 'GPUImage'
     pod 'YYModel'
+    pod 'Masonry'
+    pod 'ReactiveCocoa'
 
   target 'LiveProjectTests' do
     inherit! :search_paths
