@@ -42,10 +42,10 @@ typedef void (^ProgressBlock)(NSProgress *taskProgress);
                  process:(ProgressBlock)progress
                 finished:(FinishedBlock)finished;
 
-//- (void)sendGetObjectFormUrl:(NSString *)urlStr
-//                  parameters:(id)parameters
-//                connectClass:(Class)Class
-//                    progress:(ProgressBlock)progress
-//                    finished:(FinishedBlock)finished;
+- (void)sendGetObjectFormUrl:(NSString *)urlStr
+                  parameters:(id)parameters
+                connectClass:(Class)Class
+                    progress:(ProgressBlock)progress
+                    finished:(FinishedBlock)finished;
 
 @end

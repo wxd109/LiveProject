@@ -92,7 +92,6 @@
     NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:images.count];
     dispatch_group_t group = dispatch_group_create();
     
-    double processBase = 1.0f/images.count;
     for (int i = 0; i < images.count; i++) {
         dispatch_group_enter(group);
         
@@ -118,6 +117,29 @@
             NSLog(@"%@",response);
         }
     });
+}
+
+- (void)sendGetObjectFormUrl:(NSString *)urlStr parameters:(id)parameters connectClass:(Class)Class progress:(ProgressBlock)progress finished:(FinishedBlock)finished
+{
+    NSString *partURL = [@"" stringByAppendingString:@""];
+    NSString *URLString = [partURL stringByAppendingPathComponent:urlStr];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/xml",@"text/html",@"application/x-www-form-urlencoded",@"application/json", @"text/json", @"text/javascript",@"charset=UTF-8", nil];
+    manager.requestSerializer.timeoutInterval = 20.0;
+    
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+    [manager GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        progress(downloadProgress);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        finished(Enum_SUCCESS,responseObject);
+        [AFNetworkActivityIndicatorManager sharedManager].enabled = NO;
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        finished(Enum_FAIL,error);
+        [AFNetworkActivityIndicatorManager sharedManager].enabled = NO;
+    }];
 }
 
 @end

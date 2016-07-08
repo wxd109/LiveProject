@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseTabBarControllerViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.rootViewController = [[BaseTabBarControllerViewController alloc] init];
+    
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)monitorNetworkState
+{
+    __block NSString *msg;
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown: // 未知网络
+            case AFNetworkReachabilityStatusNotReachable: // 没有网络(断网):
+                msg = @"没有连接到网络,请检查您的网络状态";
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN: // 手机自带网络
+                msg = @"当前为手机运营商网络";
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi: // WIFI
+                msg = nil;
+                break;
+                
+            default:
+                break;
+        }
+    }];
+    if (msg.length) {
+        UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:@"播放器" message:msg preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertControl addAction:action];
+        [self.window.rootViewController presentViewController:alertControl animated:true completion:nil];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
