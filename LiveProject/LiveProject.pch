@@ -19,5 +19,6 @@
 #import "UIViewController+SLExtension.h"
 #import "NSObject+ALinHUD.h"
 #import "NetAccessor.h"
+#import "GlobalConfig.h"
 
 #endif /* LiveProject_pch */

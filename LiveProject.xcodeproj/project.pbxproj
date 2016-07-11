@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		040EA385538567E5AD05DC53 /* Pods_LiveProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EC081B7BFED29587E20E6 /* Pods_LiveProject.framework */; };
 		3463DA0A1EE74484F5819B63 /* Pods_LiveProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD450957296637E68373E03 /* Pods_LiveProjectTests.framework */; };
+		6347597D1D3341ED00200374 /* LiveViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6347597B1D3341ED00200374 /* LiveViewCell.m */; };
+		6347597E1D3341ED00200374 /* LiveViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6347597C1D3341ED00200374 /* LiveViewCell.xib */; };
 		63C272D21D2E45F00062C805 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C272D11D2E45F00062C805 /* main.m */; };
 		63C272D51D2E45F00062C805 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C272D41D2E45F00062C805 /* AppDelegate.m */; };
 		63C272D81D2E45F00062C805 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C272D71D2E45F00062C805 /* ViewController.m */; };
@@ -75,6 +77,9 @@
 		40D48536A90284C19C79B6D4 /* Pods-LiveProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProject/Pods-LiveProject.release.xcconfig"; sourceTree = "<group>"; };
 		4A70146E202DD8207C3A1028 /* Pods-LiveProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProjectUITests/Pods-LiveProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E04E2346BF078078928C28B /* Pods-LiveProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProjectTests/Pods-LiveProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6347597A1D3341ED00200374 /* LiveViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewCell.h; sourceTree = "<group>"; };
+		6347597B1D3341ED00200374 /* LiveViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewCell.m; sourceTree = "<group>"; };
+		6347597C1D3341ED00200374 /* LiveViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveViewCell.xib; sourceTree = "<group>"; };
 		63C272CD1D2E45F00062C805 /* LiveProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C272D11D2E45F00062C805 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63C272D31D2E45F00062C805 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -474,6 +479,9 @@
 			children = (
 				63C273CD1D2FAE600062C805 /* LiveFlowLayout.h */,
 				63C273CE1D2FAE600062C805 /* LiveFlowLayout.m */,
+				6347597A1D3341ED00200374 /* LiveViewCell.h */,
+				6347597B1D3341ED00200374 /* LiveViewCell.m */,
+				6347597C1D3341ED00200374 /* LiveViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -692,6 +700,7 @@
 			files = (
 				63C273C11D2F9B6B0062C805 /* ani_popover_loading_yz_small.gif in Resources */,
 				63C272E01D2E45F00062C805 /* LaunchScreen.storyboard in Resources */,
+				6347597E1D3341ED00200374 /* LiveViewCell.xib in Resources */,
 				63C272DD1D2E45F00062C805 /* Assets.xcassets in Resources */,
 				63C273CC1D2FA3630062C805 /* PersonViewController.xib in Resources */,
 				63C273C31D2F9B6B0062C805 /* btn_nav_open_ani_sc_normal.gif in Resources */,
@@ -857,6 +866,7 @@
 				63C273631D2F43B40062C805 /* BaseTabBarControllerViewController.m in Sources */,
 				63C273231D2E58780062C805 /* NetAccessor.m in Sources */,
 				63C272D21D2E45F00062C805 /* main.m in Sources */,
+				6347597D1D3341ED00200374 /* LiveViewCell.m in Sources */,
 				63C273691D2F5A9D0062C805 /* PartViewController.m in Sources */,
 				63C273451D2E5CC50062C805 /* UIImageView+Extension.m in Sources */,
 				63C273CB1D2FA3630062C805 /* PersonViewController.m in Sources */,
