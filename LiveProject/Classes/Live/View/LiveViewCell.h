@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Data;
 
 @interface LiveViewCell : UICollectionViewCell
 
@@ -17,5 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *anchorName;
 
 @property (weak, nonatomic) IBOutlet UILabel *anchorDescribe;
+
+@property (nonatomic, strong) Data *liveData;
 
 @end

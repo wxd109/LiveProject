@@ -25,4 +25,7 @@
 #define _k_h           [UIScreen mainScreen].bounds.size.height
 
 
+#define _main_url               @"http://www.quanmin.tv/"
+#define _liveList_url           @"json/play/list.json"
+
 #endif /* GlobalConfig_h */

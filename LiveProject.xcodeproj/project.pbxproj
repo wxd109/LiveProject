@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		040EA385538567E5AD05DC53 /* Pods_LiveProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EC081B7BFED29587E20E6 /* Pods_LiveProject.framework */; };
 		3463DA0A1EE74484F5819B63 /* Pods_LiveProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD450957296637E68373E03 /* Pods_LiveProjectTests.framework */; };
+		6322DAF61D34D60F006C6DCB /* LiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322DAF51D34D60F006C6DCB /* LiveListModel.m */; };
 		6347597D1D3341ED00200374 /* LiveViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6347597B1D3341ED00200374 /* LiveViewCell.m */; };
 		6347597E1D3341ED00200374 /* LiveViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6347597C1D3341ED00200374 /* LiveViewCell.xib */; };
 		63C272D21D2E45F00062C805 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C272D11D2E45F00062C805 /* main.m */; };
@@ -77,6 +78,8 @@
 		40D48536A90284C19C79B6D4 /* Pods-LiveProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProject/Pods-LiveProject.release.xcconfig"; sourceTree = "<group>"; };
 		4A70146E202DD8207C3A1028 /* Pods-LiveProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProjectUITests/Pods-LiveProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E04E2346BF078078928C28B /* Pods-LiveProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProjectTests/Pods-LiveProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6322DAF41D34D60F006C6DCB /* LiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveListModel.h; sourceTree = "<group>"; };
+		6322DAF51D34D60F006C6DCB /* LiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveListModel.m; sourceTree = "<group>"; };
 		6347597A1D3341ED00200374 /* LiveViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewCell.h; sourceTree = "<group>"; };
 		6347597B1D3341ED00200374 /* LiveViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewCell.m; sourceTree = "<group>"; };
 		6347597C1D3341ED00200374 /* LiveViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveViewCell.xib; sourceTree = "<group>"; };
@@ -470,6 +473,8 @@
 		63C273521D2F3E410062C805 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6322DAF41D34D60F006C6DCB /* LiveListModel.h */,
+				6322DAF51D34D60F006C6DCB /* LiveListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -854,6 +859,7 @@
 			files = (
 				63C273411D2E5CC50062C805 /* NSObject+ALinHUD.m in Sources */,
 				63C273601D2F43510062C805 /* BaseNavigationViewController.m in Sources */,
+				6322DAF61D34D60F006C6DCB /* LiveListModel.m in Sources */,
 				63C273401D2E5CC50062C805 /* UIDevice+SLExtension.m in Sources */,
 				63C272D81D2E45F00062C805 /* ViewController.m in Sources */,
 				63C273461D2E5CC50062C805 /* UIView+SLExtension.m in Sources */,
