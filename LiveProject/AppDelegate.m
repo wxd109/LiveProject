@@ -23,6 +23,7 @@
     self.window.rootViewController = [[BaseTabBarControllerViewController alloc] init];
     
     [self.window makeKeyAndVisible];
+    [self monitorNetworkState];
     return YES;
 }
 
@@ -43,17 +44,16 @@
             case AFNetworkReachabilityStatusReachableViaWiFi: // WIFI
                 msg = nil;
                 break;
-                
-            default:
-                break;
+        }
+        if (msg.length) {
+            UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:@"播放器" message:msg preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alertControl addAction:action];
+            [self.window.rootViewController presentViewController:alertControl animated:true completion:nil];
         }
     }];
-    if (msg.length) {
-        UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:@"播放器" message:msg preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-        [alertControl addAction:action];
-        [self.window.rootViewController presentViewController:alertControl animated:true completion:nil];
-    }
+    
+    [manager startMonitoring];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

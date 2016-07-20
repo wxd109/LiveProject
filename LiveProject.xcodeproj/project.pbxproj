@@ -667,6 +667,7 @@
 				TargetAttributes = {
 					63C272CC1D2E45F00062C805 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6W7BW6GZZR;
 					};
 					63C272E51D2E45F10062C805 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1013,6 +1014,8 @@
 			baseConfigurationReference = 0D40A4B1A74D2675B2F9020E /* Pods-LiveProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LiveProject/Frameworks",
@@ -1023,6 +1026,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyjr.LiveProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1031,6 +1035,8 @@
 			baseConfigurationReference = 40D48536A90284C19C79B6D4 /* Pods-LiveProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LiveProject/Frameworks",
@@ -1041,6 +1047,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyjr.LiveProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
