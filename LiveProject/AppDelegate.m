@@ -24,6 +24,7 @@
     
     [self.window makeKeyAndVisible];
     [self monitorNetworkState];
+    //sss
     return YES;
 }
 
